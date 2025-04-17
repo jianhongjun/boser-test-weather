@@ -1,0 +1,30 @@
+{
+  "name": "boser-test-weather",
+  "version": "1.1.1",
+  "type": "module",
+  "bin": {
+    "boser-test-weather": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "MCP server for using the Boser API",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.9.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "shx": "^0.3.4"
+  }
+}
